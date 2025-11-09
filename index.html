@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+</head>
+<body>
+<div class="container">
+        <!-- Clock In Form -->
+        <div id="clockInView">
+            <div class="header">
+                <div class="icon">⏰</div>
+                <h1>Time Tracker</h1>
+                <p>Clock in to start your work day</p>
+            </div>
+            
+            <form id="clockInForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input 
+                        type="text" 
+                        id="fullName" 
+                        required 
+                        placeholder="John Doe"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        required 
+                        placeholder="john@company.com"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="position">Position *</label>
+                    <input 
+                        type="text" 
+                        id="position" 
+                        required 
+                        placeholder="Software Engineer"
+                    >
+                </div>
+                
+                <button type="submit" class="clock-in-btn" id="clockInBtn">
+                    🟢 Clock In
+                </button>
+            </form>
+            
+            <div class="info-box">
+                🔒 Your time data is securely logged to Google Sheets
+            </div>
+        </div>
+
+        <!-- Clocked In View -->
+        <div id="clockedInView" class="clocked-in-view">
+            <div class="header">
+                <div class="icon">⏰</div>
+                <h1>You're Clocked In!</h1>
+            </div>
+            
+            <div class="status-badge">🟢 Currently Working</div>
+            
+            <div class="user-info">
+                <p><strong>Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Position:</strong> <span id="displayPosition"></span></p>
+                <p><strong>Clock In Time:</strong> <span id="displayClockIn"></span></p>
+            </div>
+            
+            <div class="timer-display" id="timer">00:00:00</div>
+            
+            <button class="clock-out-btn" id="clockOutBtn">
+                🔴 Clock Out
+            </button>
+            
+            <div class="reminder">
+                💡 <strong>Tip:</strong> Bookmark this page or keep this tab open so you can easily clock out when you're done!
+            </div>
+        </div>
+
+        <div id="result"></div>
+    </div>
+</body>
+</html>
