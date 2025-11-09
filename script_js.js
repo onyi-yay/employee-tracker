@@ -1,4 +1,4 @@
-const N8N_FORM_URL = 'http://localhost:5678/webhook/clock-in-out'; // Replace with your n8n form URL
+const N8N_FORM_URL = 'http://localhost:5678/webhook-test/clock-in-out'; // Replace with your n8n form URL
         
         // Check if user is already clocked in (stored in browser)
         window.addEventListener('load', () => {
