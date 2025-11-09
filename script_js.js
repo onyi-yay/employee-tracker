@@ -1,4 +1,4 @@
-const N8N_FORM_URL = 'YOUR_N8N_FORM_URL_HERE'; // Replace with your n8n form URL
+const N8N_FORM_URL = 'http://localhost:5678/form-test/clock-in'; // Replace with your n8n form URL
         
         // Check if user is already clocked in (stored in browser)
         window.addEventListener('load', () => {
