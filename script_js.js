@@ -227,4 +227,3 @@ const N8N_FORM_URL = 'https://onyiyaay-dev1.app.n8n.cloud/webhook/clock-in-out';
                 clockOutBtn.textContent = '🔴 Clock Out';
             }
         });
- });
