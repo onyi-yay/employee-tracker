@@ -216,3 +216,15 @@ const N8N_FORM_URL = 'https://onyiyaay-dev1.app.n8n.cloud/webhook/clock-in-out';
                 } else {
                     throw new Error('Clock out failed');
                 }
+         } catch (error) {
+                resultDiv.innerHTML = `
+                    <div class="result error">
+                        <h3>❌ Error</h3>
+                        <p>Failed to clock out. Please try again.</p>
+                    </div>
+                `;
+                clockOutBtn.disabled = false;
+                clockOutBtn.textContent = '🔴 Clock Out';
+            }
+        });
+ });
