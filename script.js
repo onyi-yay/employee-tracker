@@ -1,4 +1,4 @@
-const N8N_FORM_URL = 'https://onyiyaay-dev1.app.n8n.cloud/webhook/clock-in-out'; // Replace with your n8n form URL
+const N8N_FORM_URL = 'https://2qpdk0s4uyfxhx1ugna3rqad.hooks.n8n.cloud/webhook/clock-in-out'; // Replace with your n8n form URL
         
         // Check if user is already clocked in (stored in browser)
         window.addEventListener('load', () => {
